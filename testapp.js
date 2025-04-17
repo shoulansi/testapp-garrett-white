@@ -44,3 +44,35 @@ console.log("Climbing Routes in this event:", climbingRoutes);
 
 //This app allows for rock climbers to create, share, and sign up for events locally. Allowing for easier access for meeting new friends, showing off your strength, and other multiple uses.
 */
+
+const readline = require('readline-sync');
+
+//Here's functions lol
+
+function passWordChecker(functionCall){
+
+}
+//wrote this do while loop before realizing functions existed and I should create them. Retrospectively changning it to work in a function.
+function userNameChecker(user){
+    do{
+        let userNameQuestion = readline.question(`Please Enter Your Username:\n`);
+        console.log(userNameQuestion);
+            if (userNameQuestion.length <= 2){
+                console.log("Username must be at least 3 characters.");
+            
+            }
+    
+            if (userNameQuestion.length > 2) {
+                
+            }
+    
+    } while (userNameQuestion.length <= 2);
+    }
+
+//Here I plan to have my user validation
+
+let userData = [];
+//I need a way to check username and passwords so that they fit criteria. i.e. loops/conditionals
+console.log('Welcome to Rock Climb Together');
+
+
